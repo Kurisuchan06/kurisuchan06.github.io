@@ -1,0 +1,64 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Carte d'information */
+.info-card {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond transparent pour voir l'image */
+    border-radius: 15px; /* Coins arrondis */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    background-image: url('background-image.jpg'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Solution pour opacité de l'image */
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Superposition avec transparence pour réduire l'opacité de l'image */
+    z-index: 0;
+}
+
+/* Style du texte et bouton */
+.info-card h2,
+.info-card p {
+    position: relative;
+    z-index: 1;
+    color: white; /* Texte blanc pour lisibilité */
+}
+
+.info-card button {
+    background-color: white;
+    color: #3498db;
+    padding: 10px 20px;
+    border: 2px solid #3498db; /* Bordure autour du bouton */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition pour l'effet hover */
+    position: relative;
+    z-index: 1;
+}
+
+/* Effet hover sur le bouton */
+.info-card button:hover {
+    background-color: #3498db;
+    color: white;
+}
