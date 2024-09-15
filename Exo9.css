@@ -1,0 +1,36 @@
+/* Couleur de fond globale */
+body {
+    background-color: #f0f0f0; /* Couleur de fond pour toute la page */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Titre avec image de fond */
+h1 {
+    background-image: url('background-image.jpg'); /* Image de fond */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir le titre */
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 36px;
+}
+
+/* Section avec couleur de fond transparente */
+.highlight-section {
+    background-color: rgba(52, 152, 219, 0.7); /* Couleur de fond avec transparence */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Paragraphe général */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
